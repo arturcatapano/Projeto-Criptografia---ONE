@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Codifique sua frase</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js" defer></script>
+    </head>    
+    <body>
+        <header></header>
+
+        <main>
+            <section>
+                <h1 class="apresentacao__conteudo__titulo">Codificando uma frase a sua escolha</h1>
+                <textarea class="apresentacao__conteudo__escrita" id="input-text" placeholder="Digite aqui seu texto" cols="42" rows="3"></textarea>
+
+                <div class="botoes">
+                    <p class="botoes-paragrafos">Somente letras minúsculas.</p>
+                    <button onclick="botaoCripto()" class="botoes__cripto">Criptografar</button>
+                    <button onclick="botaoDecripto()" class="botoes__decripto">Descriptografar</button>
+                </div>
+
+            </section>
+
+            <section class="texto-final">  
+                <div class="titulo__direita">
+                    <textarea class="area__saida" id="output-text" placeholder="Digite aqui seu texto:" readonly></textarea>                   
+                </div>
+
+                <div class="botao_copiar">
+                    <button id="copiarTexto" onclick="copiar()" class="botoes__copiar">Copiar</button>
+                </div>
+            </section>  
+        </main>
+
+        <footer class="rodape">
+            <p class="textoEu">Desenvolvido por: Artur B. Catapano</p>
+            <a class="links" href="https://github.com/arturcatapano">
+                    <img src="./assets/github.png">
+                    Github
+            </a>
+            <a class="links" href="https://www.linkedin.com/in/artur-catapano/">
+                    <img src="./assets/linkedin.png">
+                    Linkedin
+            </a>          
+        </footer>
+    </body>
+</html>
